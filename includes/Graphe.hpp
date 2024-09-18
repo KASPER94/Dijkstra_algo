@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <cstring>
+# include <vector>
 # include "Sommet.hpp"
 
 class Sommet;
@@ -13,6 +14,8 @@ class Graphe {
 	public:
 		Graphe();
 		~Graphe();
+		void	AddSummit(std::string name, std::vector<std::string> dependancy);
+		Sommet	*GetSummitByName(std::string name);
 };
 
 #endif

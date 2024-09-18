@@ -11,6 +11,8 @@ SRC_DIR = sources/
 OBJ_DIR = objects/
 
 SRC = main.cpp \
+	  Graphe.cpp \
+	  Sommet.cpp \
 
 OBJ = $(SRC:.cpp=.o)
 

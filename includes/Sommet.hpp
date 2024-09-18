@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <cstring>
+# include <vector>
 
 class Sommet {
 	private:
@@ -11,6 +12,9 @@ class Sommet {
 	public:
 		Sommet();
 		~Sommet();
+		void	setAdj(Sommet *adj);
+		void	setName(std::string name);
+		std::string	GetName(void);
 };
 
 #endif
