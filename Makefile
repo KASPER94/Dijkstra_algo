@@ -13,6 +13,7 @@ OBJ_DIR = objects/
 SRC = main.cpp \
 	  Graphe.cpp \
 	  Sommet.cpp \
+	  Algo.cpp \
 
 OBJ = $(SRC:.cpp=.o)
 

@@ -9,7 +9,8 @@ Graphe::~Graphe() {
 }
 
 Sommet *Graphe::GetSummitByName(std::string name) {
-	for (auto i = this->_g.begin(); i < this->_g.end(); i++) {
+	std::vector<Sommet*>::iterator i;
+	for (i = this->_g.begin(); i < this->_g.end(); i++) {
 		Sommet *s = *i;
 		if (s->GetName() == name)
 			return (s);
